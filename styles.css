@@ -1,23 +1,25 @@
 * {
     font-family: 'Mulish', Tahoma, sans-serif;
     box-sizing: border-box;
-    margin: 50px;
+    margin: auto;
   }
   
   body {
     background-color: #f4e6ff;
+  }
+
+  section {
+    margin: 0px 500px;
   }
   
   h1 {
     font-family: 'Amatic SC', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    margin: 5px;
   }
   
   h2, h3 {
     font-family: 'Alegreya'; 
-    margin: 5px;
   }
   
   h2 {
@@ -30,7 +32,6 @@
   }
   
   p {
-    margin: 15px;
     text-align: justify;
   }
   
