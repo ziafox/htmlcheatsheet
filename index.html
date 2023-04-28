@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Amatic+SC:wght@400;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+  <title>Code Reference</title>
+
+  <div class="banner">
+    <h1>Coding Cheat Sheet</h1>
+  </div>
+
+  <nav class="header">
+    <ul>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#boxmodel">Box Model</a></li>
+      <li><a href="#cssselect">CSS selectors</a></li>
+      <li><a href="#">Navigation Bars</a></li>
+      <li><a href="#">Typography</a></li>
+      <li><a href="#cssprop">Common CSS Properties</a></li>
+    </ul>
+  </nav>
+</head> 
+
+<body>
+
+<div id="tables">
+  <h2>Tables</h2>
+  <h3 class="tabletitle">Table Elements</h3>
+  
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Tag</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td><span class="code">table</span></td>
+        <td>Table</td>
+        <td>This element is the baseline for creating a table.</td>
+      </tr>
+      <tr>
+        <td><span class="code">thead</span></td>
+        <td>Table Heading</td>
+        <td>A way to section off the table heading.</td>
+      </tr>
+      <tr>
+        <td><span class="code">tbody</span></td>
+        <td>Table Body</td>
+        <td>A way to section off long tables.</td>
+      </tr>
+     <tr>
+        <td><span class="code">tfoot</span></td>
+        <td>Table Footer</td>
+        <td>A way to section off the table footer.</td>
+      </tr>
+      <tr>
+        <td><span class="code">th</span></td>
+        <td>Table Heading</td>
+        <td>Defines data as a heading.</td>
+      </tr>      
+      <tr>
+        <td><span class="code">tr</span></td>
+        <td>Table Row</td>
+        <td>This element defines what is in a table row.</td>
+      </tr>
+      <tr>
+        <td><span class="code">td</span></td>
+        <td>Table Data</td>
+        <td>Container for information in a row.</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+  <h3 class="tabletitle">Table Attributes</h3>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Attribute</th>
+        <th scope="col">Name</th>
+        <th scope="col">Arguments</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td><span class="code">scope</span></td>
+        <td>Scope</td>
+        <td>col, row, colgroup, rowgroup</td>
+        <td>Determines if <span class="code">th</span> is used for headings for a single column or row, or if it is used for headings that sit over the top of multiple columns or rows.</td>
+      </tr>
+      <tr>
+        <td><span class="code">colspan</span></td>
+        <td>Column Span</td>
+        <td>Unitless number ie. 2, 5, etc.</td>
+        <td>Determines how many columnns a <span class="code">td</span> should span.</td>
+        </tr>
+      <tr>
+        <td><span class="code">rowspan</span></td>
+        <td>Row Span</td>
+        <td>Unitless number ie. 2, 5, etc.</td>
+        <td>Determines how many columnns a <span class="code">td</span> should span.</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+<br>
+
+<div id="boxmodel">
+  <h2>CSS: The Box Model</h2>
+  <img src="https://content.codecademy.com/courses/updated_images/diagram-boxmodel_Updated_1-01.svg" alt="An image of the box model, containing margin, border, padding, and content.">
+  <p>The Box Model comprises the set of properties that define parts of an element that take up space on a web page. The model includes the content area’s size (width and height) and the element’s padding, border, and margin.</p>
+  
+  <h3>Margin</h3> 
+  <p>The amount of space between the border and the outside edge of the element </p>
+  
+  <section class="border">
+  <h3>Border</h3> 
+  <p>The thickness and style of the border surrounding the content area and padding. There are two main CSS properties that affect the border:</p>
+  <ul>
+    <li><span class="property">border-width</span> is set in pixels or with one of the following key words
+      <ul>
+        <li class="thin"><span class="value">thin</span></li>
+        <li class="medium"><span class="value">medium</span></li>
+        <li class="thick"><span class="value">thick</span></li>
+      </ul>
+    </li>
+    <li><span class="property">border-style</span> is set with any of the following key words
+      <ul class="border">
+        <li><span class="value">none</span></li>
+        <li class="hidden"><span class="value">hidden</span></li>
+        <li class="dotted"><span class="value">dotted</span></li>
+        <li class="dashed"><span class="value">dashed</span></li>
+        <li class="solid"><span class="value">solid</span></li>
+        <li class="double"><span class="value">double</span></li>
+        <li class="groove"><span class="value">groove</span></li>
+        <li class="ridge"><span class="value">ridge</span></li>
+        <li class="inset"><span class="value">inset</span></li>
+        <li class="outset"><span class="value">outset</span></li>
+        <li class="mix"><span class="value">a mix of different borders</span></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+  <h3>Padding</h3> 
+  <p>The amount of space between the content area and the border. You can adjust specific padding by adding 
+    <span class="value">-top</span>, 
+    <span class="value">-right</span>, 
+    <span class="value">-left</span>, or 
+    <span class="value">-bottom</span>. Or, you can simply input 4 pixel values and it will adjust the padding clockwise, starting with top.
+    <ul>
+      <li>3 values
+        <ol>
+          <li>top</li>
+          <li>LR</li>
+          <li>bottom</li>
+        </ol>
+      </li>
+      <li>2 values
+        <ol>
+          <li>top/bottom</li>
+          <li>LR</li>
+        </ol>
+      </li>
+    </ul>
+  </p>
+    <h3>Content</h3> 
+    <p>The space where your content is shown. Defined by the 
+      <span class="property">width</span> and 
+      <span class="property">height</span> properties in CSS.</p>
+
+    <h3>Box-Sizing</h3>
+    <p>You can avoid dimensional issues with resizing and readjusting by using <span class="property">border-box</span>. In this model, the height and width of the box will remain fixed. Border and padding are included inside of the box, which means overall dimensions of the box do not change. The default value of <span class="property">box-sizing</span> is <span class="value">content-box</span>.</p>
+
+    <h3>Overflow</h3>
+    <p>The <span class="property">overflow</span> property sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction. It is defined by a few key values. </p>
+    <section class="overflow">
+      <table>
+        <tr>
+          <td><span class="property">overflow:</span> <span class="value">visible</span></td>
+          <td><span class="property">overflow:</span> <span class="value">hidden</span></td>
+          <td><span class="property">overflow:</span> <span class="value">clip</span></td>
+          <td><span class="property">overflow:</span> <span class="value">scroll</span></td>
+          <td><span class="property">overflow:</span> <span class="value">auto</span></td>
+        </tr>
+        <tr>
+          <td><div class="ofex visible">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy.</div></td>
+          <td><div class="ofex hidden">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy.</div></td>
+          <td><div class="ofex clip">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy.</div></td>
+          <td><div class="ofex scroll">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy.</div></td>
+          <td><div class="ofex auto">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy </div></td>                    
+        </tr>
+      </table>
+    <br><br>
+    <p>If you want to overflow a table like I did above, you have to make sure the specific <span class="code">table</span> element has a <span class="property">display:</span> <span class="value">block</span> style. Then, you have to nest a <span class="code">div</span> element inside of a <span class="code">td</span> element. I gave the <span class="code">div</span> a class and, in CSS, gave it <span class="property">display:</span> <span class="value">block</span> and <span class="property">max-height:</span> <span class="value">100px</span>. This took me forever to figure out.</p>      
+    </section>
+  </div>
+
+  <div id="cssselect">
+    <h2>CSS Selectors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Selector</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="code">* { }</span></td>
+          <td>Universal Selector</td>
+          <td>References the entire CSS unless otherwise noted.</td>
+        </tr>
+        <tr>
+          <td><span class="code">.class { }</span></td>
+          <td>Class Selector</td>
+          <td>References any class from the HTML.</td>
+        </tr>
+        <tr>
+          <td><span class="code">#id { }</span></td>
+          <td>ID Selector</td>
+          <td>References any element ID from the HTML.</td>
+        </tr>
+        <tr>
+          <td><span class="code">h1.special</span></td>
+          <td>Element Class Selector</td>
+          <td>Selects elements with a specific class. In this example, only <span class="code">h1</span> elements with the <span class="code">special</span> class are selected.</td>
+        </tr>
+        <tr>
+          <td><span class="code">:hover</span></td>
+          <td>On Hover</td>
+          <td>Something will happen to the element, class, or id before <span class="code">:hover</span> when the mouse is hovering over it.</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">For more selectors, visit W3schools' CSS Selector Reference sheet.</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br>
+    <p>A few other important notes about selectors. <span class="code">#id</span> are the most specific selectors in CSS and they should only be applied to a single element. <span class="code">&#60;style&#62;</span> allows you to write CSS in an HTML file.</p>
+   </div> 
+
+<br>
+
+<div id="typography">
+  <h2>Typography</h2>
+
+</div>
+<br>
+
+<div id="cssprop">
+  <h2>Common CSS Properties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Values</th>
+          <th>Discription</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>text-align</td>
+          <td>left <br>center <br>right <br>justify</td>
+          <td>Determines how the text is aligned on the page inside of its parent element.</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>hex #000000 <br>rgb( ) <br>hsl( ) <br>web-safe colors</td>
+          <td>Styles an element's foreground color</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>hex #000000 <br>rgb( ) <br>hsl( ) <br>web-safe colors</td>
+          <td>Styles an element's background color</td>
+        </tr>
+        <tr>
+          <td>background-image</td>
+          <td>url( )</td>
+          <td>Sets one or more images as the background.</td>
+        </tr>
+        <tr>
+          <td>position</td>
+          <td>static (default) <br>relative <br>absolute <br>fixed <br>sticky</td>
+          <td>Specifies the type of positioning method used for an element. Requires an offset property like top and/or left.</td>
+        </tr>
+        <tr>
+          <td>z-index</td>
+          <td>0 (default) <br>integer</td>
+          <td>Controls how far back or how far forward an element should appear. Higher number means higher priority.</td>
+        </tr>
+        <tr>
+          <td>display</td>
+          <td>inline <br>block <br>inline-block</td>
+          <td>Specifies the display behavior (the type of rendering box) of an element.</td>
+        </tr>
+        <tr>
+          <td>float</td>
+          <td>left <br>right</td>
+          <td>Used for moving elements as far left or right as possible, commonly used for wrapping text around images.</td>
+        </tr>
+        <tr>
+          <td>clear</td>
+          <td>left <br>right <br>both <br>none</td>
+          <td>Specifies how elements should behave when they bump into each other.</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">...and many more!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+</body>
+
+<footer>
+  <p>Created by Zia Fox, 2023</p>
+</footer>  
+</html>
