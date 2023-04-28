@@ -8,7 +8,9 @@
   <title>Code Reference</title>
 
   <div class="banner">
-    <h1>Coding Cheat Sheet</h1>
+    <section>
+     <h1>Coding Cheat Sheet</h1>
+    </section>
   </div>
 
   <nav class="header">
@@ -26,6 +28,7 @@
 <body>
 
 <div id="tables">
+ <section>
   <h2>Tables</h2>
   <h3 class="tabletitle">Table Elements</h3>
   
@@ -109,12 +112,14 @@
         </tr>
     </tbody>
   </table>
+ </section>
 </div>
 
 <br>
 <br>
 
 <div id="boxmodel">
+ <section>
   <h2>CSS: The Box Model</h2>
   <img src="https://content.codecademy.com/courses/updated_images/diagram-boxmodel_Updated_1-01.svg" alt="An image of the box model, containing margin, border, padding, and content.">
   <p>The Box Model comprises the set of properties that define parts of an element that take up space on a web page. The model includes the content area’s size (width and height) and the element’s padding, border, and margin.</p>
@@ -183,7 +188,7 @@
 
     <h3>Overflow</h3>
     <p>The <span class="property">overflow</span> property sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction. It is defined by a few key values. </p>
-    <section class="overflow">
+    <div class="overflow">
       <table>
         <tr>
           <td><span class="property">overflow:</span> <span class="value">visible</span></td>
@@ -202,10 +207,12 @@
       </table>
     <br><br>
     <p>If you want to overflow a table like I did above, you have to make sure the specific <span class="code">table</span> element has a <span class="property">display:</span> <span class="value">block</span> style. Then, you have to nest a <span class="code">div</span> element inside of a <span class="code">td</span> element. I gave the <span class="code">div</span> a class and, in CSS, gave it <span class="property">display:</span> <span class="value">block</span> and <span class="property">max-height:</span> <span class="value">100px</span>. This took me forever to figure out.</p>      
-    </section>
+    </div>
+   </section>
   </div>
 
   <div id="cssselect">
+   <section>
     <h2>CSS Selectors</h2>
     <table>
       <thead>
@@ -250,7 +257,8 @@
     </table>
     <br>
     <p>A few other important notes about selectors. <span class="code">#id</span> are the most specific selectors in CSS and they should only be applied to a single element. <span class="code">&#60;style&#62;</span> allows you to write CSS in an HTML file.</p>
-   </div> 
+ </section>  
+</div> 
 
 <br>
 
@@ -261,6 +269,7 @@
 <br>
 
 <div id="cssprop">
+ <section>
   <h2>Common CSS Properties</h2>
     <table>
       <thead>
@@ -323,6 +332,7 @@
         </tr>
       </tfoot>
     </table>
+   </section>
   </div>
 
 </body>
