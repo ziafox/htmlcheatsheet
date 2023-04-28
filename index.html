@@ -10,6 +10,7 @@
   <div class="banner">
     <section>
      <h1>Coding Cheat Sheet</h1>
+     <p><i>New sections added as I learn!</i></p>
     </section>
   </div>
 
@@ -18,8 +19,7 @@
       <li><a href="#tables">Tables</a></li>
       <li><a href="#boxmodel">Box Model</a></li>
       <li><a href="#cssselect">CSS selectors</a></li>
-      <li><a href="#">Navigation Bars</a></li>
-      <li><a href="#">Typography</a></li>
+      <li><a href="#typography">Typography</a></li>
       <li><a href="#cssprop">Common CSS Properties</a></li>
     </ul>
   </nav>
@@ -155,6 +155,7 @@
     </li>
   </ul>
 </div>
+<br>
 
   <h3>Padding</h3> 
   <p>The amount of space between the content area and the border. You can adjust specific padding by adding 
@@ -178,15 +179,18 @@
       </li>
     </ul>
   </p>
-    <h3>Content</h3> 
+  <br>  
+  <h3>Content</h3> 
     <p>The space where your content is shown. Defined by the 
       <span class="property">width</span> and 
       <span class="property">height</span> properties in CSS.</p>
 
-    <h3>Box-Sizing</h3>
+  <br> 
+  <h3>Box-Sizing</h3>
     <p>You can avoid dimensional issues with resizing and readjusting by using <span class="property">border-box</span>. In this model, the height and width of the box will remain fixed. Border and padding are included inside of the box, which means overall dimensions of the box do not change. The default value of <span class="property">box-sizing</span> is <span class="value">content-box</span>.</p>
 
-    <h3>Overflow</h3>
+  <br>
+  <h3>Overflow</h3>
     <p>The <span class="property">overflow</span> property sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction. It is defined by a few key values. </p>
     <div class="overflow">
       <table>
@@ -205,9 +209,10 @@
           <td><div class="ofex auto">Shane from Stardew Valley is easily the best suitor because he does the sexiest thing any man can do. He goes to therapy </div></td>                    
         </tr>
       </table>
-    <br><br>
+    <br><br><br>
     <p>If you want to overflow a table like I did above, you have to make sure the specific <span class="code">table</span> element has a <span class="property">display:</span> <span class="value">block</span> style. Then, you have to nest a <span class="code">div</span> element inside of a <span class="code">td</span> element. I gave the <span class="code">div</span> a class and, in CSS, gave it <span class="property">display:</span> <span class="value">block</span> and <span class="property">max-height:</span> <span class="value">100px</span>. This took me forever to figure out.</p>      
     </div>
+    <br> <br>
    </section>
   </div>
 
@@ -257,14 +262,34 @@
     </table>
     <br>
     <p>A few other important notes about selectors. <span class="code">#id</span> are the most specific selectors in CSS and they should only be applied to a single element. <span class="code">&#60;style&#62;</span> allows you to write CSS in an HTML file.</p>
- </section>  
+    <br> <br>
+  </section>  
 </div> 
 
 <br>
 
 <div id="typography">
+ <section>
   <h2>Typography</h2>
-
+    <p>This page has a few Google Fonts. I've set the global font to be Mulish. It has 2 fallback fonts, Tahoma and sans-serif. For my <span class="code">h1</span> elements, I use Amatic SC. For my <span class="code">h2</span> and <span class="code">h3</span> elements, I use Alegreya. All of my headers will default to sans-serif as well. You can see an example of my fonts below.</p>
+    <br>
+    <ul>
+      <li><b>Global Default</b> <br><br>Mulish <br><span class="tahoma">Tahoma</span> <br><span class="sans-serif">Sans-serif</span></li>
+      <li><b>Headers</b> <br><br><span class="amatic">Amatic SC</span> <br><span class="Alegreya">Alegreya</span> <br><span class="sans-serif">Sans-serif</span></li>
+    </ul>
+    <br>
+    <p>You can change the styling of your text with properties like <span class="property">font-weight</span>, <span class="property">font-style</span>, <span class="property">text-transform</span>, <span class="property">letter-spacing</span>, <span class="property">word spacing</span>, and <span class="property">line-height</span>. Below are examples of their values.</p>
+    <br>
+    <ul>
+      <li><span class="property">font-weight</span> <br><br><span class="fwb">Bold</span> <br><span class="fwn">Normal</span> <br><span class="fwlr">Lighter</span> <br><span class="fwbr">Bolder</span></li>
+      <li><span class="property">font-style</span> <br><br><span class="fsi">Italic</span> <br><span class="fsn">Normal</span></li>
+      <li><span class="property">text-transform</span> <br><br><span class="ttu">uppercase</span> <br><span class="ttl">lowercase</span></li>
+      <li><span class="property">letter-spacing</span> <br><br><span class="lsp">Pixels: 3</span> <br><span class="lsem">em: (0.2)</span></li>
+      <li><span class="property">word-spacing</span> <br><br><span class="wsp">3px of word spacing</span> <br><span class="wsem">0.2em of word spacing</span></li>
+      <li><span class="property">line-height</span> <br><span class="lhu">Integer: 5</span> <br><span class="lhp">Pixels: 20</span> <br><span class="lhem">em: (0.3)</span></li>
+    </ul>
+    <br> <br>
+ </section>
 </div>
 <br>
 
@@ -332,6 +357,7 @@
         </tr>
       </tfoot>
     </table>
+    <br> <br>
    </section>
   </div>
 
